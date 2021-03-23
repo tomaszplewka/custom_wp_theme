@@ -1,0 +1,60 @@
+/* Miscellaneous */
+.container {
+    max-width: $max-width;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0 2.4rem;
+}
+.hidden {
+    display: none !important;
+}
+.show {
+    display: block !important;
+}
+.close {
+    display: none;
+}
+.no-overflow {
+    overflow: hidden !important;
+}
+.showcase {
+
+    & .show-form-mobile {
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+
+        & form {
+            overflow: scroll;
+            text-align: center;
+            border-radius: 0;
+            
+            & .input-wrapper.inline {
+                flex-wrap: wrap;
+
+                & input:first-child,
+                & input:last-child {
+                    width: 100%;
+                    padding-right: unset;
+                }
+            }
+
+            & .close {
+                display: inline-block;
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                width: 30px;
+                height: 30px;
+                font-size: 3rem;
+                cursor: pointer;
+            }
+        }
+
+        & .btn {
+            margin-bottom: 4rem;
+        }
+    }
+}
