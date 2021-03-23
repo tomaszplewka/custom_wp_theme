@@ -24,6 +24,7 @@
 - [x] Implements custom header & footer menus
 - [x] Involves custom CSS & JS
 - [x] Responsive
+- [x] Implements customized automated workflow written using gulp (npm scripts for development & production, sass compiler, webpack bundler, BrowserSync, etc.)
 
 # Demo
 
@@ -55,6 +56,7 @@
     <img src="https://github.com/tomaszplewka/custom_wp_theme/blob/main/images/php.svg" width="85" alt="php" >
     <img src="https://github.com/tomaszplewka/custom_wp_theme/blob/main/images/mysql.svg" width="150" alt="mysql" >
     <img src="https://github.com/tomaszplewka/custom_wp_theme/blob/main/images/wordpress.png" width="90" alt="wordpress" >
+    <img src="https://github.com/tomaszplewka/custom_wp_theme/blob/main/images/gulp.png" width="90" alt="gulp" >
 </p>
 
 # Usage
@@ -62,6 +64,8 @@
 Just clone/fork the repo. Create new a folder in `/wp-content/themes/` directory and paste all the files there.
 
 You can now activate this theme in your WP admin panel.
+
+In order to take advantage of gulp workflow, run `npm install` from within your theme root directory. Then run `npm start` to start development mode, or `npm run build` to build for production. You may need to change `proxy` option in `gulpfile.babel.js` (line 66) to reflext your local development folder structure.
 
 # License
 
